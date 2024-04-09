@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html>
+  <p id="demo">JavaScrirpt can change HTML content.</p>
 
-<p id="demo">JavaScript can change HTML.</p>
-
-<p>Latest version</p>
-
-<button onclick='update()'>Click Me!</button>
-
+  <button onclick="change()">Click Me!</button>
 </html>
 
 <script>
-function update() {
-	document.getElementById("demo").innerHTML="Hello";
-}
+  function change() {
+    document.getElementById("demo").innerHTML = "Hello";
+  }
 </script>
