@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1 id="demo">Hello!!</h1>
+    <h1 id="demo">Hello!</h1>
 
     <button onclick="update()">Click Me</button>
 
     <script>
       function update() {
-        document.getElementById("demo").innerHTML = "This is a test website.";
+        let websiteMessage = "This is a test website.";
+        document.getElementById("demo").innerHTML = `${websiteMessage}`;
       }
     </script>
   </body>
