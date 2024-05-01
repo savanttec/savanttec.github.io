@@ -23,9 +23,11 @@
         ];
 
         for (let i = 0; i < pageNames.length; i++) {
-          if (document.title === pageNames[i]) {
+          var currentPageTitle = pageNames[i];
+
+          if (document.title === currentPageTitle) {
             document.getElementById("demo").innerHTML =
-              "We are here: " + pageNames[i];
+              "We are here: " + currentPageTitle;
             break;
           }
         }
