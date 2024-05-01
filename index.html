@@ -13,7 +13,7 @@
         /*  let websiteMessage = "This is a test website.";
         document.getElementById("demo").innerHTML = `${websiteMessage}`; */
 
-        let pageNames = [
+        var pageNames = [
           "Home",
           "About Us",
           "Contact Us",
@@ -25,7 +25,7 @@
         for (let i = 0; i < pageNames.length; i++) {
           if (document.title === pageNames[i]) {
             document.getElementById("demo").innerHTML =
-              "We are here: " + pageName[i];
+              "We are here: " + pageNames[i];
           }
         }
       }
