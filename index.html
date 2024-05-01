@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>About Us</title>
+  </head>
   <body>
     <h1 id="demo">Hello!</h1>
 
@@ -7,8 +10,24 @@
 
     <script>
       function update() {
-        let websiteMessage = "This is a test website.";
-        document.getElementById("demo").innerHTML = `${websiteMessage}`;
+        /*  let websiteMessage = "This is a test website.";
+        document.getElementById("demo").innerHTML = `${websiteMessage}`; */
+
+        let pageNames = [
+          "Home",
+          "About Us",
+          "Contact Us",
+          "JavaScript Playground",
+          "News",
+          "Blog",
+        ];
+
+        for (let i = 0; i < pageNames.length; i++) {
+          if (document.title === pageNames[i]) {
+            document.getElementById("demo").innerHTML =
+              "We are here: " + pageName[i];
+          }
+        }
       }
     </script>
   </body>
