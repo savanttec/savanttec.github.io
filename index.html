@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>About Us</title>
+    <title>About</title>
   </head>
   <body>
     <h1 id="demo">Hello!</h1>
@@ -10,27 +10,8 @@
 
     <script>
       function update() {
-        /*  let websiteMessage = "This is a test website.";
-        document.getElementById("demo").innerHTML = `${websiteMessage}`; */
-
-        var pageNames = [
-          "Home",
-          "About Us",
-          "Contact Us",
-          "JavaScript Playground",
-          "News",
-          "Blog",
-        ];
-
-        for (let i = 0; i < pageNames.length; i++) {
-          var currentPageTitle = pageNames[i];
-
-          if (document.title === currentPageTitle) {
-            document.getElementById("demo").innerHTML =
-              "We are here: " + currentPageTitle;
-            break;
-          }
-        }
+        let websiteMessage = "Hello Faraan!";
+        document.getElementById("demo").innerHTML = `${websiteMessage}`;
       }
     </script>
   </body>
