@@ -4,4 +4,4 @@ function update() {
   document.getElementById("demo").innerHTML = `${websiteMessage}`;
 }
 
-export default update;
+
