@@ -10,6 +10,4 @@ const everydayPack = new Backpack(
   false
 ); 
 
-
-
 export default everydayPack;
