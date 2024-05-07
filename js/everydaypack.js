@@ -11,7 +11,7 @@ const everydayPack = new Backpack(
 ); 
 
 function showBackpack() {
-  document.body.innerHTML = `
+  document.getElementById("demo").innerHTML = `
   <main>
       <article>
           <h1>${everydayPack.name}</h1>
@@ -24,5 +24,14 @@ function showBackpack() {
   `;
 }
 
-// Assign the function to the window object so it is globally available:
+function updateDemo() {
+   
+  let websiteMessage = "This is a test website.";
+  document.getElementById("demo").innerHTML = `${websiteMessage}`;
+  
+  alert("Hi");
+}
+
+// Assign the functions to the window object so they are globally available:
 window.showBackpack = showBackpack;
+window.updateDemo = updateDemo;
