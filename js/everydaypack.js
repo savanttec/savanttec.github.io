@@ -26,10 +26,15 @@ function showBackpack() {
 
 function updateDemo() {
    
-  let websiteMessage = "This is a test website.";
-  document.getElementById("demo").innerHTML = `${websiteMessage}`;
+  const websiteOriginalMessage = "Hello!!";
+  const websiteNewMessage = "This is a test website.";
+
+  if(document.getElementById("demo").innerHTML === websiteOriginalMessage) {
+    document.getElementById("demo").innerHTML = `${websiteNewMessage}`;
+  } else {
+    document.getElementById("demo").innerHTML = `${websiteOriginalMessage}`
+  }
   
-  alert("Hi");
 }
 
 // Assign the functions to the window object so they are globally available:
