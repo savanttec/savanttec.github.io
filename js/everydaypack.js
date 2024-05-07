@@ -1,5 +1,7 @@
 import Backpack from "./classes.js";
 
+const websiteOriginalMessage = "Hello!!";
+
 const everydayPack = new Backpack(
   "Everyday Backpack",
   30,
@@ -11,7 +13,7 @@ const everydayPack = new Backpack(
 ); 
 
 function showBackpack() {
-  document.getElementById("demo").innerHTML = `
+  const content = `
   <main>
       <article>
           <h1>${everydayPack.name}</h1>
@@ -22,11 +24,18 @@ function showBackpack() {
       </article>
   </main>
   `;
+  
+  
+  if(document.getElementById("demo").innerHTML === websiteOriginalMessage) {
+    document.getElementById("demo").innerHTML = content;
+  } else {
+    document.getElementById("demo").innerHTML = `${websiteOriginalMessage}`
+  }
 }
 
 function updateDemo() {
    
-  const websiteOriginalMessage = "Hello!!";
+ 
   const websiteNewMessage = "This is a test website.";
 
   if(document.getElementById("demo").innerHTML === websiteOriginalMessage) {
