@@ -18,11 +18,11 @@ function showBackpack() {
       <article>
           <h1>${everydayPack.name}</h1>
           <ul>
-              <li>Volume: ${everydayPack.volume}</li>
+              <li>Volume: ${everydayPack.volume} cubic litre</li>
               <li>Color: ${everydayPack.color}</li>
               <li>Number of Pockets: ${everydayPack.pocketNum}</li>
-              <li>Left Strap Length: ${everydayPack.strapLength.left}</li>
-              <li>Right Strap Length: ${everydayPack.strapLength.right}</li>
+              <li>Left Strap Length: ${everydayPack.strapLength.left} inch</li>
+              <li>Right Strap Length: ${everydayPack.strapLength.right} inch</li>
           </ul>
       </article>
   </main>
