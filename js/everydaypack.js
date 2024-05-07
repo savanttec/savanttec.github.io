@@ -1,6 +1,6 @@
 import Backpack from "./classes.js";
 
-const websiteOriginalMessage = "Hello!!";
+const originalContent = "Hello!";
 
 const everydayPack = new Backpack(
   "Everyday Backpack",
@@ -20,28 +20,28 @@ function showBackpack() {
           <ul>
               <li>Volume: ${everydayPack.volume}</li>
               <li>Color: ${everydayPack.color}</li>
+              <li>Number of Pockets: ${everydayPack.pocketNum}</li>
+              <li>Left Strap Length: ${everydayPack.strapLength.left}</li>
+              <li>Right Strap Length: ${everydayPack.strapLength.right}</li>
           </ul>
       </article>
   </main>
   `;
   
-  
-  if(document.getElementById("demo").innerHTML === websiteOriginalMessage) {
+  if(document.getElementById("demo").innerHTML === originalContent){
     document.getElementById("demo").innerHTML = content;
   } else {
-    document.getElementById("demo").innerHTML = `${websiteOriginalMessage}`
+    document.getElementById("demo").innerHTML = `${originalContent}`
   }
 }
 
 function updateDemo() {
-   
- 
-  const websiteNewMessage = "This is a test website.";
+  const newContent = "This is a test website.";
 
-  if(document.getElementById("demo").innerHTML === websiteOriginalMessage) {
-    document.getElementById("demo").innerHTML = `${websiteNewMessage}`;
+  if(document.getElementById("demo").innerHTML === originalContent) {
+    document.getElementById("demo").innerHTML = `${newContent}`;
   } else {
-    document.getElementById("demo").innerHTML = `${websiteOriginalMessage}`
+    document.getElementById("demo").innerHTML = `${originalContent}`
   }
   
 }
