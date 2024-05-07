@@ -28,6 +28,7 @@ class Backpack {
         this.strapLength.right = lengthRight;
     }
 
+
 }
 
 export default Backpack;
