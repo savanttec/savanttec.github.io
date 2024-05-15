@@ -16,7 +16,7 @@ function showBackpack() {
   const content = `
   <main>
       <article>
-          <h1>${everydayPack.name}</h1>
+          <h1 class="title" style="color:blue;">${everydayPack.name}</h1>
           <ul>
               <li>Volume: ${everydayPack.volume} cubic litre</li>
               <li>Color: ${everydayPack.color}</li>
@@ -33,19 +33,22 @@ function showBackpack() {
   } else {
     document.getElementById("demo").innerHTML = `${originalContent}`
   }
+
+  document.querySelectorAll("main li").forEach(item => item.style.backgroundColor = "paleturquoise");
 }
 
 function updateDemo() {
   const newContent = "This is a test website.";
+
 
   if(document.getElementById("demo").innerHTML === originalContent) {
     document.getElementById("demo").innerHTML = `${newContent}`;
   } else {
     document.getElementById("demo").innerHTML = `${originalContent}`
   }
-  
 }
 
-// Assign the functions to the window object so they are globally available:
+
+// Assign the functions to the window object so they are globally available
 window.showBackpack = showBackpack;
 window.updateDemo = updateDemo;

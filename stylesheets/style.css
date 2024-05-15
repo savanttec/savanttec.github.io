@@ -1,0 +1,32 @@
+.responsive-iframe-top {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    background-color: lightgray;
+    border: 2px solid darkgray;
+  }
+
+  .responsive-iframe-left {
+    top: 20%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height:800px;
+    background-color: lightgray;
+    border: 2px solid darkgray;
+  }
+
+  .responsive-iframe-main {
+    top: 20%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 78%;
+    float:right;
+    height: 800px;
+    border: 2px solid darkgray;
+  }
